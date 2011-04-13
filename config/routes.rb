@@ -5,6 +5,9 @@ DavelabNet::Application.routes.draw do
 
   get "pages/about"
 
+  match "/about", :to => "pages#about"
+  match "/contact", :to => "pages#contact"
+
   root :to => "pages#home"
 
   # The priority is based upon order of creation:
