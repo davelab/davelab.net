@@ -1,4 +1,6 @@
 DavelabNet::Application.routes.draw do
+  resources :works
+
   devise_for :users
 
   resources :categories
