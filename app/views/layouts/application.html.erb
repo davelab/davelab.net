@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= render ('layouts/head') %>
+  <%= render('layouts/head') %>
 </head>
 <body>
 
-  <%#= render('layouts/header') %>
-  <%#= render('layouts/sub_header') %>
+  <%= render('layouts/header') %>
+  <%= render('layouts/sub_header') %>
 
-<div class="container">
+<div class="container" id="main">
+
+<% if notice  %>
+<p class="notice"><%= notice %></p>
+<%  end %>
+<% if alert  %>
+<p class="alert"><%= alert %></p>
+<%  end %>
+
   <%= yield %>
 </div>
+
+  <%= render('layouts/footer') %>
 
 </body>
 </html>

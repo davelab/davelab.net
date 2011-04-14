@@ -1,4 +1,9 @@
 about=List versions of all Rails frameworks and the environment
+admin\:ckeditor_download=Download CKEditor to your public javascript folder
+admin\:copy_assets=Copy assets files - javascripts, stylesheets and images
+admin\:populate_database=Populate history table with a year of data
+admin\:populate_history=Populate history table with a year of data
+admin\:prepare_ci_env=Prepare Continuous Integration environment
 db\:abort_if_pending_migrations=
 db\:charset=
 db\:collation=

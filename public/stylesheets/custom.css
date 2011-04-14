@@ -3,12 +3,22 @@
 	src: url('../fonts/galette-med.otf');
 }
 
+/** custom typography **/
+
 h1, h2, h3{
     font-family: Galette, Arial, Helvetica, sans-serif;
     color: #f60a64;
 }
 
+a:focus,
+a:hover     { color: #EC4A44; }
+a           { color: #F60A64;}
+a[href^="http://"] {
+    background: url(../images/out.png) center right no-repeat;
+    padding-right: 13px;
+}
 
+/**----------------------**/
 
 body{
     color:#575455;
@@ -33,5 +43,136 @@ header{
 #sub_header{
     width:100%;
     height:426px;
+    border-bottom: 1px solid #e1e1e1;
     background: url(../images/bg_video.jpg) repeat-x;
 }
+
+
+#cont_light{
+    width:1024px;
+    height:412px;
+    background: url(../images/luce_video.png) center no-repeat;
+    margin: 0 auto;
+    padding-top:14px;
+}
+
+#cont_player
+{
+    width:660px;
+    height: 380px;
+    padding:18px;
+    background: url(../images/bg_player.png) no-repeat;
+    margin: 0 auto;
+}
+
+#cont_what
+{
+    width: 100%;
+    height:auto;
+    padding-top:20px;
+    background: #fefefe url(../images/bg_home_what.jpg) bottom repeat-x;
+      border-bottom: 1px solid #e1e1e1;
+
+
+
+}
+.box-shadow{
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow:  0 0px 5px  #666;
+   -o-box-shadow:  0 0px 5px   #666;
+   -webkit-box-shadow:  0 0px 5px  #666;
+   -moz-box-shadow:  0 0px 5px  #666;
+   padding: 1em
+
+}
+
+.tn-shadow
+{
+    background: #fff;
+    width:159px;
+    height: 89px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow:  0 0px 5px  #666;
+   -o-box-shadow:  0 0px 5px   #666;
+   -webkit-box-shadow:  0 0px 5px  #666;
+   -moz-box-shadow:  0 0px 5px  #666;
+    float:left;
+    margin-right:10px;
+
+}
+
+
+#last_works
+{
+    min-height: 220px;
+}
+
+#twitte_news
+{
+    background: #ebebeb url(../images/bg_twitter_news.png) center no-repeat;
+    min-height: 220px;
+}
+
+
+
+ul#ok_list li{
+    list-style: none;
+    background: url(../images/ok.png) left no-repeat;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 8px 0px 8px 40px;
+}
+
+ul#will_list li{
+    list-style: none;
+    background: url(../images/will.png) left no-repeat;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 8px 0px 8px 40px;
+}
+
+ul#not_list li{
+    list-style: none;
+    background: url(../images/not.png) left no-repeat;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 8px 0px 8px 40px;
+}
+
+footer{
+    width: 100%;
+    height:auto;
+    min-height: 120px;
+    padding:20px 0;
+    background: #fefefe url(../images/bg_home_what.jpg) bottom repeat-x;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+
+}
+
+
+/** custom input and form **/
+
+input.mailing
+{
+    background: url(../images/mailinglist_input.png) no-repeat;
+    width:323px;
+    height: 45px;
+    border:none;
+    padding:0 10px;
+    font-size: 16px;
+}
+
+input[type=submit].sub_circular{
+    background: url(../images/submit_btn.png) no-repeat;
+    width: 44px;
+    height: 44px;
+    border:none;
+    cursor: pointer;
+}
+
+/**----------------------**/
