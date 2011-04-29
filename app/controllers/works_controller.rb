@@ -1,6 +1,9 @@
 class WorksController < ApplicationController
   # GET /works
   # GET /works.xml
+before_filter :authenticate_user!, :only => [:new, :edit, :create, :update]
+
+
   def index
     @works = Work.all
 
@@ -24,7 +27,13 @@ class WorksController < ApplicationController
   # GET /works/new
   # GET /works/new.xml
   def new
+
+
     @work = Work.new
+    
+    4.times do
+        @work.images.build
+    end
 
     respond_to do |format|
       format.html # new.html.erb

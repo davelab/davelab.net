@@ -60,6 +60,10 @@ notes\:custom=Enumerate a custom annotation, specify with ANNOTATION=CUSTOM
 notes\:fixme=
 notes\:optimize=
 notes\:todo=
+paperclip\:clean=Cleans out invalid attachments. Useful after you've added new validations.
+paperclip\:refresh=Refreshes both metadata and thumbnails.
+paperclip\:refresh\:metadata=Regenerates content_type/size metadata for a given CLASS (and optional ATTACHMENT).
+paperclip\:refresh\:thumbnails=Regenerates thumbnails for a given CLASS (and optional ATTACHMENT).
 rails\:freeze\:edge=
 rails\:freeze\:gems=
 rails\:template=Applies the template supplied by LOCATION=/path/to/template
@@ -81,8 +85,8 @@ test\:integration=
 test\:plugins=
 test\:prepare=
 test\:profile=
-test\:recent=Run tests for {:recent=>"test:prepare"} / Test recent changes
-test\:uncommitted=Run tests for {:uncommitted=>"test:prepare"} / Test changes since last checkin (only Subversion and Git)
+test\:recent=Run tests for recenttest:prepare / Test recent changes
+test\:uncommitted=Run tests for uncommittedtest:prepare / Test changes since last checkin (only Subversion and Git)
 test\:units=
 time\:zones\:all=Displays all time zones, also available: time:zones:us, time:zones:local -- filter with OFFSET parameter, e.g., OFFSET=-6
 time\:zones\:local=
