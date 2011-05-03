@@ -37,11 +37,7 @@ textarea {
   border:1px solid #bbb;
   color:#000; 
 }
-input[type=text]:focus, input[type=password]:focus,
-input.text:focus, input.title:focus,
-textarea:focus {
-  border-color:#666;
-}
+
 select { background-color:#fff; border-width:1px; border-style:solid; }
 
 input[type=text], input[type=password],

@@ -1,7 +1,7 @@
 class WorksController < ApplicationController
   # GET /works
   # GET /works.xml
-before_filter :authenticate_user!, :only => [:new, :edit, :create, :update]
+
 
 
   def index

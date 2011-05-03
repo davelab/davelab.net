@@ -10,9 +10,11 @@ DavelabNet::Application.routes.draw do
   get "pages/contact"
 
   get "pages/about"
+  get "pages/signin"
 
   match "/about", :to => "pages#about"
   match "/contact", :to => "pages#contact"
+  match "/loggati", :to => "pages#signin"
 
   root :to => "pages#home"
 

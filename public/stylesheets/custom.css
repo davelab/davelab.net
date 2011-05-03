@@ -165,6 +165,7 @@ input.mailing
     border:none;
     padding:0 10px;
     font-size: 16px;
+    border:0;
 }
 
 input[type=submit].sub_circular{
@@ -174,5 +175,20 @@ input[type=submit].sub_circular{
     border:none;
     cursor: pointer;
 }
+
+
+#main input[type=text], #main input[type=email],#main input[type=password]{
+    border: 1px solid #ccc;
+    padding:4px;
+    font-size: 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+
+#main input[type=text]:focus, #main input[type=email]:focus,#main input[type=password]:focus, #maininput.text:focus,#main input.title:focus,#main textarea:focus {border-color:#F60A64;}
+
 
 /**----------------------**/
