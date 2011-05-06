@@ -14,7 +14,9 @@
   <b>Description:</b>
   <%= @work.description %>
 </p>
-
+<%- @work.images.each do |image| %>
+  <%= image_tag image.url(:small) %>
+<% end %>
 <p>
   <b>Link:</b>
   <%= @work.link %>
