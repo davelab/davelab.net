@@ -10,6 +10,7 @@ gem 'mysql2'
 gem 'devise'
 gem 'rails_admin', :git => 'http://github.com/sferik/rails_admin.git'
 gem "paperclip"
+gem 'jquery-rails', '>= 0.2.6'
 
 
 

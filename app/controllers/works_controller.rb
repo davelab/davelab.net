@@ -2,8 +2,6 @@ class WorksController < ApplicationController
   # GET /works
   # GET /works.xml
 
-
-
   def index
     @works = Work.all
 
@@ -27,11 +25,9 @@ class WorksController < ApplicationController
   # GET /works/new
   # GET /works/new.xml
   def new
-
-
     @work = Work.new
     
-    4.times do
+    2.times do
         @work.images.build
     end
 

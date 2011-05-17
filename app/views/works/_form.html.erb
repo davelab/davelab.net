@@ -20,6 +20,18 @@
                           { :prompt => true })
   %>
   </div>
+
+
+<p>
+<%- @work.images.each do |image| %>
+
+  <%= image_tag image.url(:small) %>
+<%= f.check_box(:image_delete) %>
+<% end %>
+</p>
+
+
+
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
