@@ -1,26 +1,11 @@
 class Work < ActiveRecord::Base
 
-  before_save :destroy_image?
 
   belongs_to :category
   has_many :images, :as => :assetable, :class_name => "Work::Image", :dependent => :destroy
 
-  accepts_nested_attributes_for :images, :reject_if => proc { |attributes| attributes['attachment'].blank? }
+  accepts_nested_attributes_for :images,  :reject_if => proc { |attributes| attributes['attachment'].blank? and attributes['_destroy'] == "false" }, :allow_destroy   => true
 
-
-
-  def image_delete
-    @image_delete ||= "0"
-  end
-
-  def image_delete=(value)
-    @image_delete = value
-  end
-
-private
-  def destroy_image?
-    self.attachment.clear if @image_delete == "1"
-  end
 
   
 end

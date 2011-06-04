@@ -23,11 +23,15 @@
 
 
 <p>
-<%- @work.images.each do |image| %>
+	<% @work.images.each do |image| %>
+	  <%= f.fields_for :images, image do |image_fields| %>
+		<% if !image.new_record? %>
+	    	<%= image_tag image.url(:small) %>
+	    	<%= image_fields.check_box :_destroy %>
+	    <% end %>
+	  <% end %>
+	<% end %>
 
-  <%= image_tag image.url(:small) %>
-<%= f.check_box(:image_delete) %>
-<% end %>
 </p>
 
 
@@ -43,7 +47,9 @@
 
   <!-- nasted images form -->
   <%= f.fields_for :images do |builder| %>
-    <%= render 'image_fields', :f => builder %>
+	<% if builder.object.new_record? %>
+    	<%= render 'image_fields', :f => builder %>
+	<% end %>
   <% end %>
 
 
